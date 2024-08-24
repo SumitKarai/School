@@ -1,0 +1,16 @@
+.formstyle
+{
+    align-items: center;
+    background-color: lightblue;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.item-style
+{
+    padding: 10px;
+    margin: 10px;
+}
+.headingstyle
+{
+    color: darkblue;
+}
