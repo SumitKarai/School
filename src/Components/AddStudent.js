@@ -1,6 +1,6 @@
 import { Button } from "@mui/material"
 import React, { useState,} from "react"
-import { Link,useNavigate,useLocation} from "react-router-dom";
+import { useNavigate,useLocation} from "react-router-dom";
 import './Style.css';
 function AddStudent (props){
     const navigate = useNavigate()
@@ -15,7 +15,7 @@ function AddStudent (props){
 React.useEffect(()=>{
    
 
-if(screen?.display=='edit'){
+if(screen?.display==='edit'){
    setName(screen.name)
    setEmail(screen.email)
    setClasses(screen.standard)
@@ -28,6 +28,7 @@ if(screen?.display=='edit'){
    console.log(screen.display)
    console.log(screen.id)
 }
+// eslint-disable-next-line
 },[])
 
 
@@ -98,7 +99,7 @@ if(screen?.display=='edit'){
                        console.log(oldData)
 
                     
-                        const editIndex = oldData.findIndex(student => student.id == id);
+                        const editIndex = oldData.findIndex(student => student.id === id);
                         oldData[editIndex].name = namees
                         oldData[editIndex].email =  email
                         oldData[editIndex].standard = classes

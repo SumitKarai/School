@@ -17,6 +17,7 @@ export default function Student() {
       
         fetchStudents()
         console.log(studentData)
+        // eslint-disable-next-line
     },[])
 
 
@@ -39,7 +40,7 @@ export default function Student() {
              let oldData =JSON.parse(localStorage.getItem('studentData'))
              console.log(oldData)
              
-           const editIndex = oldData.findIndex(student => student.id == id);
+           const editIndex = oldData.findIndex(student => student.id === id);
              console.log(editIndex)
              oldData.splice(editIndex,1)
            localStorage.setItem('studentData',JSON.stringify(oldData));
