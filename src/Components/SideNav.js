@@ -119,7 +119,7 @@ export default function Sidenav() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['student', 'teacher',].map((text, index) => (
+          {['home','teacher','student' ].map((text, index) => (
             <ListItem className='list-text' key={text} disablePadding>
               <Link to={'/'+text}>
               <ListItemButton onClick={handleDrawerClose}>
